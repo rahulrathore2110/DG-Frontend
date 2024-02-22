@@ -90,7 +90,7 @@ const Sidebar = () => {
     <div className="bg-gray-900 border-r border-gray-700">
       <div
         onClick={() => setOpen(false)}
-        className={`md:hidden fixed  inset-0 max-h-screen z-[998] bg-black/80 ${
+        className={`md:hidden fixed  inset-0 max-h-screen z-[998] bg-black/90 ${
           open ? "block" : "hidden"
         } `}
       ></div>
@@ -100,7 +100,7 @@ const Sidebar = () => {
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
         className="  text-white shadow-xl z-[999] max-w-[16rem]  w-[16rem] 
-            overflow-hidden md:relative fixed h-screen "
+            overflow-scroll md:relative fixed h-screen "
       >
         <div className="flex items-center gap-2.5 font-medium border-b py-3 border-slate-300  mx-3">
           {open && <img src={logo} width={200} alt="Logo" />}
