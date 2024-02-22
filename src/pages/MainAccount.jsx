@@ -106,9 +106,9 @@ const MainAccount = () => {
 
           <Form
             method="post"
-            className="mx-auto mt-12 p-6  grid shadow-lg shadow-slate-700/70 bg-transparent border-2 text-white max-w-md rounded-lg tracking-wider w-sm"
+            className="mx-auto mt-12 p-2 md:p-6  grid shadow-lg shadow-slate-700/70 bg-transparent border-2 text-white max-w-md rounded-lg tracking-wider sm:text-xs md:text-lg"
           >
-            <h1 className="text-center mb-6 text-2xl">
+            <h1 className="text-center mb-6 md:text-2xl">
               Initiate Your Transaction
             </h1>
 
@@ -119,7 +119,7 @@ const MainAccount = () => {
                   name="type"
                   id="type"
                   placeholder="Choose Your Transaction Type"
-                  className="p-2 border-b-2 border-l-2 
+                  className="p-1 border-b-2 border-l-2 
                   bg-gray-900 border-r-2 focus:outline-none rounded-md"
                 >
                   <option value="" disabled selected >
@@ -138,7 +138,7 @@ const MainAccount = () => {
                   name="amount"
                   id="amount"
                   placeholder="Enter Your Amount"
-                  className="p-2 border-b-2 bg-transparent border-l-2 border-r-2 focus:outline-none rounded-md"
+                  className="p-1 border-b-2 bg-transparent border-l-2 border-r-2 focus:outline-none rounded-md"
                 />
               </label>
               <label className="grid gap-2 font-medium">
@@ -148,7 +148,7 @@ const MainAccount = () => {
                   name="particular"
                   id="particular"
                   placeholder="Enter Your Remarks"
-                  className="p-2 border-b-2 bg-transparent border-l-2 border-r-2 focus:outline-none rounded-md"
+                  className="p-1 border-b-2 bg-transparent border-l-2 border-r-2 focus:outline-none rounded-md"
                 />
               </label>
             </div>

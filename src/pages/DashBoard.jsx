@@ -22,11 +22,11 @@ const DashBoard = () => {
   };
 
   return (
-    <div className="px-4 md:p-6 grid gap-6">
+    <div className="px-2 md:p-6 grid gap-6 text-xs sm:text-xl">
       <div className="flex flex-wrap gap-6">
-        <div className="shadow-lg max-w-fit sm:min-w-72 grid gap-4 text-center p-4  bg-transparent text-white border-2 rounded-md">
+        <div className="shadow-lg max-w-fit sm:min-w-72 grid gap-4 text-center p-2 sm:p-4  bg-transparent text-white border-2 rounded-md">
           <h1 className="text-2xl">Pay EMI</h1>
-          <hr className="sm:w-28 m-auto border-2  border-cyan-500 " />
+          <hr className="w-28 m-auto border-2  border-cyan-500 " />
           <input
             type="number"
             onChange={handleChangeEmi}
@@ -46,9 +46,9 @@ const DashBoard = () => {
 
         {/* Approve Loan */}
 
-        <div className="shadow-lg max-w-fit sm:min-w-72 grid gap-4 text-center p-4  bg-transparent text-white border-2 rounded-md">
+        <div className="shadow-lg max-w-fit sm:min-w-72 grid gap-4 text-center p-2 sm:p-4   bg-transparent text-white border-2 rounded-md">
           <h1 className="text-2xl">Approve Loan</h1>
-          <hr className="sm:w-28 m-auto border-2 border-cyan-500 " />
+          <hr className="w-28 m-auto border-2 border-cyan-500 " />
           <input
             type="number"
             onChange={handleChangeLoan}
