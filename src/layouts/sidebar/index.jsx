@@ -99,8 +99,7 @@ const Sidebar = () => {
         variants={Nav_animation}
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
-        className="  text-white shadow-xl z-[999] max-w-[16rem]  w-[16rem] 
-            overflow-scroll md:relative fixed h-screen "
+        className="  text-white shadow-xl z-[999] max-w-[16rem]  w-[16rem] h-screen  md:relative fixed  "
       >
         <div className="flex items-center gap-2.5 font-medium border-b py-3 border-slate-300  mx-3">
           {open && <img src={logo} width={200} alt="Logo" />}
@@ -109,26 +108,20 @@ const Sidebar = () => {
         <div className="flex flex-col  h-full">
           <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-sky-500   md:h-[68%] h-[70%]">
             <li>
-              <NavLink to={"/"} className="link" >
+              <NavLink to={"/"} className="link">
                 <AiOutlineAppstore size={23} className="min-w-max" />
                 DashBoard
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to={"/mainAccount"}
-                className="link"
-              >
+              <NavLink to={"/mainAccount"} className="link">
                 <HiOutlineDatabase size={23} className="min-w-max" />
                 Main Account
               </NavLink>
             </li>
 
             <li>
-              <NavLink
-                to={"/transaction"}
-                className="link"
-              >
+              <NavLink to={"/transaction"} className="link">
                 <BsPerson size={23} className="min-w-max" />
                 Transactions
               </NavLink>
@@ -147,10 +140,7 @@ const Sidebar = () => {
               </div>
             )}
             <li>
-              <NavLink
-                to={"/settings"}
-                className="link"
-              >
+              <NavLink to={"/settings"} className="link">
                 <SlSettings size={23} className="min-w-max" />
                 Settings
               </NavLink>
@@ -187,7 +177,7 @@ const Sidebar = () => {
                 }
           }
           transition={{ duration: 0 }}
-          className="absolute w-fit h-fit md:block z-50 hidden right-2 bottom-3 cursor-pointer"
+          className="absolute w-fit h-fit md:block z-50  right-2 bottom-3 cursor-pointer"
         >
           <IoIosArrowBack size={25} />
         </motion.div>

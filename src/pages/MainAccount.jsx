@@ -106,7 +106,7 @@ const MainAccount = () => {
 
           <Form
             method="post"
-            className="mx-auto mt-12 p-6  grid shadow-lg shadow-slate-700/70 bg-transparent border-2 text-white max-w-md rounded-lg tracking-wider"
+            className="mx-auto mt-12 p-6  grid shadow-lg shadow-slate-700/70 bg-transparent border-2 text-white max-w-md rounded-lg tracking-wider w-sm"
           >
             <h1 className="text-center mb-6 text-2xl">
               Initiate Your Transaction
