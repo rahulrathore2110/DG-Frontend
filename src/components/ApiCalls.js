@@ -1,6 +1,7 @@
 import { redirect } from "react-router-dom";
 
-const baseURL = "http://localhost:8088";
+// const baseURL = "http://localhost:8088";
+const baseURL = "https://dg-loan-backend-production.up.railway.app";
 
 export const loadCustomerData = async () => {
   const data = await fetch(`${baseURL}/customer/all`);
@@ -120,7 +121,7 @@ export const approveLoan = (loanId) => {
     .then((result) => alert(result));
 };
 
-export const createLoan = (loanId,amount,tenure) => {
+export const createLoan = (loanId, amount, tenure) => {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
@@ -142,16 +143,15 @@ export const createLoan = (loanId,amount,tenure) => {
 };
 
 export const settleLoan = (loanId, amount) => {
- const requestOptions = {
-   method: "PUT",
-   redirect: "follow",
- };
+  const requestOptions = {
+    method: "PUT",
+    redirect: "follow",
+  };
 
- fetch(`${baseURL}/loan/settle/${loanId}/${amount}`, requestOptions)
-   .then((response) => response.text())
-   .then((result) => alert(result));
+  fetch(`${baseURL}/loan/settle/${loanId}/${amount}`, requestOptions)
+    .then((response) => response.text())
+    .then((result) => alert(result));
 };
-
 
 export const createCustomerData = async (data) => {
   const formData = await data.request.formData();
@@ -163,11 +163,11 @@ export const createCustomerData = async (data) => {
     body: JSON.stringify(cData),
   };
 
-  fetch("${baseURL}/customer/", requestOptions)
+  fetch(`${baseURL}/customer/`, requestOptions)
     .then((response) => response.text())
     .then((result) => alert(result));
 
-  return redirect("/customer/create customer");
+  return redirect("/customer/all customer");
 };
 
 export const updateCustomerData = async (data) => {
@@ -185,7 +185,7 @@ export const updateCustomerData = async (data) => {
     .then((response) => response.text())
     .then((result) => alert(result));
 
-  return redirect("/customer/update customer");
+  return redirect("/customer/all customer");
 };
 
 export const initiateTransactionData = async (data) => {

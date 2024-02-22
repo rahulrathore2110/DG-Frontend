@@ -70,6 +70,7 @@ const CreateCustomer = () => {
                 type={feilds.type}
                 name={feilds.name}
                 placeholder={"Enter Your " + feilds.name}
+                required
                 className="p-1 rounded-md bg-transparent border border-blue-300 hover:border-blue-700 "
               />
             </label>
