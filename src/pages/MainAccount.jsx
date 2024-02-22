@@ -21,7 +21,7 @@ const MainAccount = () => {
       ) : (
         <div className="py-6 px-2 md:p-6">
           <p className="text-red-600">
-            *Click on Refresh button to load fair data.
+            *Click on Refresh button to load Updated data.
           </p>
 
           <Link to="/mainAccount">
