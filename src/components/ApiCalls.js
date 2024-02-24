@@ -1,7 +1,7 @@
 import { redirect } from "react-router-dom";
 
-// const baseURL = "http://localhost:8088";
-const baseURL = "https://dg-loan-backend-production.up.railway.app";
+const baseURL = "http://localhost:8088";
+// const baseURL = "https://dg-loan-backend-production.up.railway.app";
 
 export const loadCustomerData = async () => {
   const data = await fetch(`${baseURL}/customer/all`);

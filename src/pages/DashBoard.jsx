@@ -98,7 +98,7 @@ const DashBoard = () => {
               createLoan(loanId, amount, tenure);
             }}
           >
-            Approve
+            Create
           </button>
         </div>
       </div>
@@ -128,7 +128,7 @@ const DashBoard = () => {
               settleLoan(loanId, amount);
             }}
           >
-            Approve
+            Settle
           </button>
         </div>
       </div>
