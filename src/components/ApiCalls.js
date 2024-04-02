@@ -2,7 +2,7 @@ import { redirect } from "react-router-dom";
 
 // const baseURL = "http://localhost:8088";
 const baseURL =
-  "http://dgloan-env.eba-uceaykxy.eu-north-1.elasticbeanstalk.com";
+  "//dgloan-env.eba-uceaykxy.eu-north-1.elasticbeanstalk.com";
 
 export const loadCustomerData = async () => {
   const data = await fetch(`${baseURL}/customer/all`);
