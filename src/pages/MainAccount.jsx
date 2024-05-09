@@ -24,7 +24,7 @@ const MainAccount = () => {
             *Click on Refresh button to load Updated data.
           </p>
 
-          <Link to="/mainAccount">
+          <Link to="/">
             <button className="bg-cyan-400 m-4 text-white px-4  py-2 rounded-md shadow-lg shadow-slate-700/70 tracking-wider font-medium flex items-center gap-4">
               Refresh
               <IoRefreshCircleSharp className="text-3xl" />
@@ -32,7 +32,7 @@ const MainAccount = () => {
           </Link>
           <div className=" flex items-center flex-wrap gap-6">
             <div>
-              <div className="grid gap-4 bg-sky-500 max-w-52 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
+              <div className="grid gap-4 bg-sky-500 w-56 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
                 <h1>Main Account Balance</h1>
                 <div className="flex items-center justify-between ">
                   <MdOutlineAccountBalanceWallet className="text-4xl" />
@@ -44,7 +44,7 @@ const MainAccount = () => {
             </div>
 
             <div>
-              <div className="grid gap-4 bg-violet-500 max-w-52 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
+              <div className="grid gap-4 bg-violet-500 w-56 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
                 <h1>Capital Account Balance</h1>
                 <div className="flex items-center justify-between ">
                   <GiReceiveMoney className="text-4xl" />
@@ -56,7 +56,7 @@ const MainAccount = () => {
             </div>
 
             <div>
-              <div className="grid gap-4 bg-rose-900 max-w-52 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
+              <div className="grid gap-4 bg-rose-900 w-56 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
                 <h1>Drawing Account Balance</h1>
                 <div className="flex items-center justify-between  ">
                   <GiPayMoney className="text-4xl" />
@@ -68,7 +68,7 @@ const MainAccount = () => {
             </div>
 
             <div>
-              <div className="grid gap-4 bg-blue-500 max-w-52 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
+              <div className="grid gap-4 bg-blue-500 w-56 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
                 <h1>Payment Account Balance</h1>
                 <div className="flex items-center justify-between ">
                   <RiSecurePaymentFill className="text-4xl" />
@@ -80,7 +80,7 @@ const MainAccount = () => {
             </div>
 
             <div>
-              <div className="grid gap-4 bg-orange-500 max-w-52 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
+              <div className="grid gap-4 bg-orange-500 w-56 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
                 <h1>Receipt Account Balance</h1>
                 <div className="flex items-center justify-between">
                   <IoReceipt className="text-4xl" />
@@ -92,7 +92,7 @@ const MainAccount = () => {
             </div>
 
             <div>
-              <div className="grid gap-4 bg-green-500 max-w-52 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
+              <div className="grid gap-4 bg-green-500 w-56 text-white p-4 rounded-md shadow-lg shadow-slate-700/70 tracking-wider">
                 <h1>P & L Account Balance</h1>
                 <div className="flex items-center justify-between ">
                   <GiProfit className="text-4xl" />
@@ -122,7 +122,7 @@ const MainAccount = () => {
                   className="p-1 border-b-2 border-l-2 
                   bg-gray-900 border-r-2 focus:outline-none rounded-md"
                 >
-                  <option value="" disabled selected >
+                  <option value="" disabled selected>
                     Select your option
                   </option>
                   <option value="capital">Capital</option>

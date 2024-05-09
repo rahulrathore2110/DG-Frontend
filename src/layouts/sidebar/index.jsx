@@ -72,17 +72,17 @@ const Sidebar = () => {
     {
       name: "Customer",
       icon: FaRegUserCircle,
-      menus: ["All Customer", "Create Customer", "Update Customer"],
+      menus: ["All Customer",  "Update Customer"],
     },
     {
       name: "Loans",
       icon: AiFillBank,
-      menus: ["All Loans", "Running Loans", "Closed Loans", "approval Loans"],
+      menus: ["All Loans", "Request Loan", "approval Loans"],
     },
     {
       name: "EMI",
       icon: TbReportAnalytics,
-      menus: ["All EMI","Paid EMI", "Bounce EMI","Pending EMI", "Settled EMI"],
+      menus: ["All EMI", "Pending EMI"],
     },
   ];
 
@@ -107,14 +107,9 @@ const Sidebar = () => {
 
         <div className="flex flex-col  h-full">
           <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-sky-500   md:h-[68%] h-[70%]">
+           
             <li>
               <NavLink to={"/"} className="link">
-                <AiOutlineAppstore size={23} className="min-w-max" />
-                DashBoard
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/mainAccount"} className="link">
                 <HiOutlineDatabase size={23} className="min-w-max" />
                 Main Account
               </NavLink>

@@ -1,0 +1,25 @@
+
+.customerTable th,
+.customerTable td {
+  border: 1px solid wheat;
+  border-collapse: collapse;
+}
+
+.customerTable td,
+.customerTable th {
+  padding: 0px 5px;
+  text-align: left;
+}
+
+.customerTable select,
+.customerTable input {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.customerTable select option {
+  margin: 40px;
+  background: rgb(3, 0, 12);
+  color: #fff;
+}

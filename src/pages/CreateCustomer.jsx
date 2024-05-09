@@ -54,6 +54,8 @@ const CreateCustomer = () => {
       name: "monthlyIncome",
     },
   ];
+
+ 
   return (
     <div className="text-white">
       <h1 className="text-center text-4xl m-6 ">Create Customer</h1>
@@ -76,7 +78,7 @@ const CreateCustomer = () => {
             </label>
           ))}
         </div>
-        <button type="submit" className="bg-blue-600 text-white p-2 rounded-md">
+        <button type="submit" className="bg-blue-600 text-white p-2 rounded-md" >
           Create Customer
         </button>
       </Form>

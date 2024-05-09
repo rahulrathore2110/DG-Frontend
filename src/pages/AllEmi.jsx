@@ -4,7 +4,8 @@ import BasicTable from "../components/BasicTable";
 import { useLoaderData } from "react-router-dom";
 
 const AllEmi = () => {
-   const emiData = useLoaderData();
+  const emiData = useLoaderData();
+  console.log(emiData)
   return (
     <>
       <BasicTable

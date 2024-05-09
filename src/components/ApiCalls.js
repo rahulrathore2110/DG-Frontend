@@ -1,7 +1,7 @@
 import { redirect } from "react-router-dom";
 
-// const baseURL = "http://localhost:8088";
-const baseURL = "https://dg-loan-backend-production.up.railway.app";
+const baseURL = "http://localhost:8088";
+// const baseURL = "dg-loan-backend-production.up.railway.app";
 
 export const loadCustomerData = async () => {
   const data = await fetch(`${baseURL}/customer/all`);
@@ -121,7 +121,7 @@ export const approveLoan = (loanId) => {
     .then((result) => alert(result));
 };
 
-export const createLoan = (loanId, amount, tenure) => {
+export const createLoan = (cId, amount, tenure) => {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
@@ -137,7 +137,7 @@ export const createLoan = (loanId, amount, tenure) => {
     redirect: "follow",
   };
 
-  fetch(`${baseURL}/loan/${loanId}`, requestOptions)
+  fetch(`${baseURL}/loan/${cId}`, requestOptions)
     .then((response) => response.text())
     .then((result) => alert(result));
 };
@@ -164,10 +164,13 @@ export const createCustomerData = async (data) => {
   };
 
   fetch(`${baseURL}/customer/`, requestOptions)
-    .then((response) => response.text())
-    .then((result) => alert(result));
+    .then((response) => response.json())
+    .then((result) => {
+      alert(" Your loan created successfully with Id : " + result.cid);
+      localStorage.setItem("customer", JSON.stringify(result.cid));
+    });
 
-  return redirect("/customer/all customer");
+  return redirect("/loans/createLoan");
 };
 
 export const updateCustomerData = async (data) => {
